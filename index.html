@@ -1,30 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <title>riami.</title>
-  <link rel="stylesheet" href="index.css"></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intestazione del Sito</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .product img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            flex: 1 1 30%;
+            box-sizing: border-box;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            flex: 1;
+            padding: 5px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .location {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .location iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
 <body>
-  <h1 style="color:#660033;">riami.</h1>
-  <h2 
-   <p>riami è una azienda sostenibile che si uccupa della realizzazione di borse con materiali 100% ricicliati</p>
-<img
-src=https://static2.amica.it/wp-content/uploads/2022/05/borsa-intrecciata-alberta-ferretti-cover.jpg?v=1178262_1653990074
-usemap="#workmap" width="1000px" height="800px">
-<map name="workmap">
-  <!-- Sezione contatti --> <div class="footer-section">
-<h3>Contact Us</h3> <p>riami.info@.com</p> <p>phone:(0131) 677-760</p>
-</div>
-<!-- Sezione link utili --> <div class="footer-section">
-<h3>our links</h3> <a href="#!">chi siamo</a><br> <a href="#!">i nostri valori</a><br>
-<a href="#!">sostenibilità</a>
-<!-- Sezione social media -->
-<div class="footer-section"> </div>
-</div>
-<h3>follow us</h3>
-<a href="#!">instagram</a><br>
-<a href="#!">twitter</a><br>
-<a href="#!">tik tok</a> </div>
-</div>
-<!-- Parte inferiore del footer -->
-<div class="footer-bottom">
-<p>&copy; riami.| Tutti i diritti riservati</p>
-</div> </footer>
-</body> </html>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="#">riami.</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Cerca...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+    <div id="home" class="header-image-container">
+        <img src="https://i.pinimg.com/originals/cf/ad/60/cfad60d6d1e9e8d0601e28681a06db0f.jpg" alt="Immagine di benvenuto" class="header-image">
+    </div>
+    <section id="about" class="about-us">
+        <h2>Chi Siamo</h2>
+        <p>Riami è un brand dedicato a fornire prodotti di alta qualità. La nostra missione è offrire ai nostri clienti articoli unici e di tendenza che soddisfano le loro esigenze quotidiane. La nostra visione è diventare un marchio leader nel settore, noto per la sua eccellenza e l'attenzione ai dettagli.</p>
+      <h2> I nostri valori</h2>
+      <p> I valori di riami. sono....
+    </section>
+    <section id="shop" class="products">
+        <h2>I nostri prodotti</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/05/0c/1a/050c1a96453759202ff31827cde5114a.jpg" alt="Prodotto 1">
+                <h3>EMILY</h3>
+                <p>Descrizione del prodotto 1.</p>
+                <p class="price">€39.99</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/02/f3/80/02f380a46ed03f1ed730dbbdedfee0d8.png" alt="Prodotto 2">
+                <h3>COCO</h3>
+                <p>Descrizione del prodotto 2.</p>
+                <p class="price">€25.99</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/64/e2/a2/64e2a2cafd7d8c8224e03ba4bb0299df.jpg" alt="Prodotto 3">
+                <h3>PENELOPE</h3>
+                <p>Descrizione del prodotto 3.</p>
+                <p class="price">€45.99</p>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/62/f1/87/62f1876ae46322884b3a23d0e95d7b91.jpg" alt="Prodotto 4">
+                <h3>ROXY</h3>
+                <p>Descrizione del prodotto 4.</p>
+                <p class="price">€29.99</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/a9/66/8b/a9668b5d71e057ae9fb0b89b34aae498.jpg" alt="Prodotto 5">
+                <h3>SAMMY</h3>
+                <p>Descrizione del prodotto 5.</p>
+                <p class="price">€25.99</p>
+            </div>
+            <div class="product">
+                <img src=https://i.pinimg.com/originals/7d/1f/69/7d1f699ac1fa375d67726e6c99214c61.jpg alt="Prodotto 6">
+                <h3>LULI</h3>
+                <p>Descrizione del prodotto 6.</p>
+                <p class="price">€59.99</p>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <h2>Iscriviti alla nostra newsletter</h2>
+        <p>Iscriviti alla nostra newsletter e ottieni il 10% di sconto sul tuo primo acquisto!</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Inserisci la tua email" required>
+            <button type="submit">Iscriviti</button>
+        </form>
+    </section>
+    <section class="location">
+        <h2>Ci trovi qui</h2>
+        <p>Alessandria, Italia</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11534.051940279425!2d8.60789689591905!3d44.91485504752896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47876d53c4e5d761%3A0x2b94c8b4d3a3b7f5!2sAlessandria%2C%20Province%20of%20Alessandria%2C%20Italy!5e0!3m2!1sen!2sus!4v1620227323789!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contatti</h3>
+                <p>Telefono: 3456728759</p>
+                <p>Email: riami@info.it</p>
+            </div>
+            <div class="footer-column">
+                <h3>Seguici su</h3>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+            </div>
+        </div>
+        <p>&copy; 2024 Riami. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
