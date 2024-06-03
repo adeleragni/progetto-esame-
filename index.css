@@ -1,5 +1,239 @@
-body {
-  font-family: system-ui;
-  background: #f0b8bd;
-  text-align: center
-    }
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Sfondo bianco */
+}
+
+header {
+    background-color: #333333; /* Grigio scuro */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d2b48c; /* Tan */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #333333; /* Grigio scuro */
+}
+
+.header-image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 80%; /* Ridotta larghezza dell'immagine di benvenuto */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+}
+
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5; /* Grigio molto chiaro */
+}
+
+.about-us h2 {
+    color: #333333; /* Grigio scuro */
+}
+
+.about-us p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fafafa; /* Grigio molto chiaro */
+}
+
+.products h2 {
+    color: #333333; /* Grigio scuro */
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.product {
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product h3 {
+    margin-top: 10px;
+    color: #333333; /* Grigio scuro */
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #8b4513; /* Saddle Brown */
+}
+
+.newsletter {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* Grigio molto chiaro */
+}
+
+.newsletter h2 {
+    color: #333333; /* Grigio scuro */
+}
+
+.newsletter form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 120px);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333333; /* Grigio scuro */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #555555; /* Grigio più chiaro */
+}
+
+footer {
+    background-color: #333333; /* Grigio scuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-column {
+    width: 45%;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #d2b48c; /* Tan */
+}
+
+.location {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.location iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
