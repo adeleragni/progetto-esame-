@@ -1,2 +1,38 @@
-# progetto esame Ragni
-L'azienda Riami. si occupa della creazione di borse realizzate da artigiani esperti con materiali 100% riciclati, donando una seconda vita ai prodotti di recupero, da cui ne deriva il nome dell'azienda Ri-ami, "amare di nuovo”.
+# PROGETTO RIAMI
+
+Progetto d'esame per corso  di Web Design
+
+Anno Accademico 2023/2024
+
+Adele Ragni, matricola 961
+
+Docente Matteo Baccan
+
+# ELEMENTI PRINCIPALI DEL SITO WEB
+• Nome dell'azienda
+
+• Logo
+
+• Navbar per navigazione del sito più semplificata
+
+• (Chi siamo) Descrizione dell'azienda
+
+• (Shop) Sezione dove vengono presentati e descritti i prodotti in vendita
+
+• Posizione dell'azienda
+
+• Iscrizione alla newsletter
+
+• (Contatti)
+
+• Footer con copyright
+
+# SITI UTILIZZATI PER LA CREAZIONE  DEL SITO
+
+• Codepen.io
+
+• ChatGPT
+
+• Github
+
+• W3Schools
