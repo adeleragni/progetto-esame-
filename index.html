@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>riami</title>
+   <title>riami</title>
    <meta name="description" content="Riami - borse realizzate con materiali di recupero">
- <meta name="keywords" content="Riami, borse made in italy, artigianale, prodotti di qualità">
-    <link rel="stylesheet" href="style.css">
+   <meta name="keywords" content="Riami, borse made in italy, artigianale, prodotti di qualità">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -109,5 +109,27 @@ Al cuore del brand c’è il principio dell’economia circolare, dove nulla si 
         </div>
         <p>&copy; 2024 Riami. Tutti i diritti riservati.</p>
     </footer>
+  </section>
+  <script src="script.js"></script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const products = document.querySelectorAll('.product');
+
+    products.forEach(product => {
+        product.addEventListener('mouseenter', () => {
+            product.style.transform = 'scale(1.05)';
+            product.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            product.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+            product.style.border = '2px solid #4d6719';
+        });
+
+        product.addEventListener('mouseleave', () => {
+            product.style.transform = 'scale(1)';
+            product.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            product.style.border = 'none';
+        });
+    });
+});
+</script>
+  
 </body>
 </html>
