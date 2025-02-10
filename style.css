@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f5faea;
 }
 
@@ -23,6 +23,31 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    text-align: left;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: #4d6719;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+    background-color: #3b4e13;
+    transform: scale(1.05);
+}
+
+/* Nasconde il menu di default su schermi piccoli */
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 nav ul {
@@ -166,7 +191,7 @@ nav ul li a:hover {
 .price {
     font-weight: bold;
     color: #4d6719;
-   font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 .newsletter {
@@ -178,7 +203,6 @@ nav ul li a:hover {
 .newsletter h2 {
     color: #4d6719; 
     font-size: 1.7em;
-  
 }
 
 .newsletter form {
@@ -210,7 +234,12 @@ nav ul li a:hover {
 
 .location h2 {
     color: #4d6719;
+    font-size: 1.4em;
 }
+
+.location p {
+     font-size:1em;
+} 
 
 .location {
     text-align: center;
@@ -258,6 +287,29 @@ footer {
     color: #d2b48c;
 }
 
+/* Stile di base per il menu toggle */
+.menu-toggle {
+    display: none; 
+    font-size: 24px;
+    background: #4d6719;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+    background-color: #3b4e13;
+    transform: scale(1.05);
+}
+
+/* Nasconde il menu di default su schermi piccoli */
+.nav-menu {
+    display: flex;
+}
+
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
@@ -279,7 +331,39 @@ footer {
     .search-bar {
         margin-top: 10px;
     }
+  
+    .nav-menu.open {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+    }
 
+    .nav-menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-menu li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    /* Posizionamento del burger menu */
+    .menu-toggle {
+        display: block;
+    }
+  
+  
     .product-grid {
         flex-direction: column;
         align-items: center;
@@ -300,5 +384,39 @@ footer {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-menu li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
     }
 }
