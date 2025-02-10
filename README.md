@@ -35,4 +35,7 @@ Docente Matteo Baccan
 
 • Github
 
+• Netlify
+
 • W3Schools
+
