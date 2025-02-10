@@ -1,3 +1,7 @@
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('open');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const products = document.querySelectorAll('.product');
 
