@@ -15,7 +15,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #8ca659;
     padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
 }
 
 .logo a {
@@ -25,7 +29,10 @@ header {
     font-weight: bold;
     text-align: left;
 }
-
+.right-controls {
+    display: flex;
+    align-items: center;
+}
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -48,8 +55,9 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction:row;
+    justify-content: flex-start; 
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -290,8 +298,8 @@ footer {
 /* Stile di base per il menu toggle */
 .menu-toggle {
     display: none; 
-    font-size: 24px;
-    background: #4d6719;
+    font-size: 23px;
+    background: none;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -304,19 +312,33 @@ footer {
     background-color: #3b4e13;
     transform: scale(1.05);
 }
-
+.menu-toggle.active {
+    color: #4d6719;
+}
 /* Nasconde il menu di default su schermi piccoli */
 .nav-menu {
     display: flex;
+    flex-direction: column;
+    background-color: none;
+    position: center;
+    border-radius: 8px;
+}
+.nav-menu a:hover {
+    background-color:none;
 }
 
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
     }
-
-    .logo a {
-        font-size: 20px;
+  .search-bar {
+        margin-top: 10px;
+    }
+    .nav-menu {
+        width: 200px;
+      } 
+    .logo  {
+        font-size: 10px;
     }
 
     nav ul {
@@ -327,11 +349,6 @@ footer {
     nav ul li {
         margin: 10px 0;
     }
-
-    .search-bar {
-        margin-top: 10px;
-    }
-  
     .nav-menu.open {
         display: flex;
         position: absolute;
@@ -351,12 +368,22 @@ footer {
 
     .nav-menu li {
         padding: 10px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #eee;
     }
 
     .nav-menu li:last-child {
         border-bottom: none;
     }
+  .nav-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+  .nav-menu a:hover {
+    background-color: #f0f0f0;
+}
 
     /* Posizionamento del burger menu */
     .menu-toggle {
@@ -373,8 +400,7 @@ footer {
         width: 100%;
         max-width: 400px;
         margin: 10px 0;
-    }
-
+}
     .footer-content {
         flex-direction: column;
         align-items: center;
