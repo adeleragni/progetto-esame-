@@ -1,22 +1,28 @@
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.nav-menu').classList.toggle('open');
-});
-
 document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
     const products = document.querySelectorAll('.product');
+    const navLinks = document.querySelectorAll('.nav-menu a');
 
-    products.forEach(product => {
-        product.addEventListener('mouseenter', () => {
-            product.style.transform = 'scale(1.05)';
-            product.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
-            product.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
-            product.style.border = '2px solid #4d6719';
+    // Toggle per il burger menu
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            menuToggle.classList.toggle('active');
         });
+    }
 
-        product.addEventListener('mouseleave', () => {
-            product.style.transform = 'scale(1)';
-            product.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-            product.style.border = 'none';
+    // Effetti hover sui prodotti
+    products.forEach(product => {
+        product.addEventListener('mouseenter', () => product.classList.add('hover-effect'));
+        product.addEventListener('mouseleave', () => product.classList.remove('hover-effect'));
+    });
+
+    // Chiusura del menu quando si clicca su un link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+            menuToggle.classList.remove('active');
         });
     });
 });
