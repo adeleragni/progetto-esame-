@@ -35,6 +35,10 @@ Il sito web Riami è stato progettato per essere chiaro ed efficace. Il sito web
 
 • Footer con copyright
 
+# INDIRIZZO DI PUBBLICAZIONE NETLIFY
+
+Il repository è pubblicato a questo indirizzo:https://riami.netlify.app
+
 # SITI UTILIZZATI PER LA CREAZIONE  DEL SITO
 
 • Codepen.io
